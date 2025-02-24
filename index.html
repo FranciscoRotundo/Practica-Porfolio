@@ -30,13 +30,26 @@
     </head>
 
     <body>
+        <header>
         <h1>Portfolio de Francisco Rotundo 🧑🏻‍💻</h1>
+
+        <nav>
+            <a href="#estudios">Formacion -</a>
+            <a href="#proyectos">Proyectos -</a>    <!--Enlaces internos.-->>
+            <a href="https://www.linkedin.com/in/franciscorotundo1/" target="_blank"
+            rel="noreferrer">Linkedin -</a>
+            <a href="https://github.com/FranciscoRotundo" target="_blank"
+            rel="noreferrer"> GitHub </a>
+        </nav>
+
+        </header>
+    <main>
 
 <p>Estudiante de <strong>Licenciatura en Sistemas de Informacion.</strong> 
      Con formacion en <strong>Web Development Junior.</strong>
 </p>
 
-<h2>Experiencia</h2>
+<h2 id="estudios">Formacion</h2>
 
 <ul>
     <li class="list-item">Tecnicatura en Programacion - 2021/2022</li>
@@ -44,12 +57,166 @@
     <li class="list-item">Licenciatura en Sistemas de Informacion 2022/actualidad</li>
 </ul> 
 
-<img 
+<a download href="images/yo.jpg">
+    <img 
 width=240
 height=400
 title="Foto de Francisco" 
 alt="Foto de Francisco frente a un espejo sosteniendo su celular con la mano." 
 src="images/yo.jpg">
+</a>
+
+<h2 id="proyectos"> Mis proyectos realizados:</h2>
+ <aside>
+    <header> 
+        <h3>Tecnologias que he usado en ellas.</h3>
+    </header>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVASCRIPT</li>
+        <li>MYSQL</li>
+        <li>PHP</li>
+        <li>JAVA</li>
+        <li>PYTHON</li>
+    </ul>
+ </aside>
+
+    <section>
+        <article>
+            <header>
+                <h4>Sistema cine</h4>
+            </header>
+            <p>
+                Desarrollo de un sistema cine para compra de entradas/productos de manera online.
+            </p>
+            <footer>
+                <small>Tecnologias utilizadas: Python, archivos JSON.</small>
+            </footer>
+        </article>
+    </section>
+    <section>
+        <article>
+            <header>
+                <h4>Sistema cine</h4>
+            </header>
+            <p>
+                Desarrollo de un sistema cine para compra de entradas/productos de manera online.
+            </p>
+            <footer>
+                <small>Tecnologias utilizadas: Python, archivos JSON.</small>
+            </footer>
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <header>
+                <h4>Sistema cine</h4>
+            </header>
+            <p>
+                Desarrollo de un sistema cine para compra de entradas/productos de manera online.
+            </p>
+            <footer>
+                <small>Tecnologias utilizadas: Python, archivos JSON.</small>
+            </footer>
+        </article>
+    </section>
+</main>
+
+<section>
+    <h2>Preguntas frecuentes</h2>
+
+    <details>
+        <summary>Que estudios tenes</summary>
+        <p>
+            Comencé la Tecnicatura en Programación en la UTN de Resistencia, pero por cuestiones personales y en busca de un mejor entorno, decidí regresar a Formosa y continuar con la Licenciatura en Sistemas. Actualmente, estoy cursando el tercer año. Mientras esperaba la inscripción tras la mudanza, realicé un curso de Programador Web Inicial en la misma facultad.
+        </p>
+    </details>
+    <details>
+        <summary>Cuales son tus hobbys?</summary>
+        <p>Me apasiona la tecnología, disfruto aprender sobre nuevos dispositivos y componentes, analizando sus mejoras y diseños. También me gusta el deporte; practiqué natación durante varios años en la secundaria y actualmente estoy adentrándome en el body building.</p>
+    </details>
+
+    <details>
+        <summary>
+            ¿Estoy abierto a aprender nuevas tecnologías?</summary>
+            <p>¡Sí! Siempre estoy dispuesto a aprender sobre nuevas tecnologías y comprender cómo funcionan internamente las empresas para desarrollar soluciones eficaces.</p>
+    </details>
+</section>
+
+<section>
+    <h2>Formulario de contacto</h2>
+
+    <form method="post" action="/">
+        <fieldset>
+            <legend>Informacion personal</legend>
+            <div>
+            <label>Nombre:
+                <input type="text" 
+                name="name" 
+                placeholder="FranciscoLol" required>
+        </label>
+    </div>
+        <label>Email:
+            <input type="email" 
+            name="email" 
+            placeholder="FranciscoLol@gmail.com" required>
+    </label>
+        </fieldset>
+<fieldset>
+    <legend>Informacion adicional</legend>
+    <div>
+        <label>Telefono:
+            <input type="tel" 
+            name="phone" 
+            placeholder="32907058" required pattern="[0-9]{9}">
+    </label>
+</fieldset>
+
+<fieldset>
+    <legend>Otros</legend>
+
+    <div>
+        <label for="why">Por que deseas contactarte conmigo?</label>
+        <select name="why" id="why">
+            <option value="1">Trabajo</option>
+            <option value="2">Duda</option>
+            <option value="3">Mas informacion</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="terms">Aceptas los terminos?
+            <input type="checkbox" name="terms" required>
+        </label>
+    </div>
+
+    <div>
+        <datalist id="lenguages">
+            <option value="JavaScript"></option>
+            <option value="Python"></option>
+            <option value="Java"></option>
+        </datalist>
+        <label>Con que lenguaje quieres que te ayude?</label>
+        <input list="lenguages" name="lenguages">
+    </div>
+
+
+</fieldset>
+
+        <input type="submit" value="Enviar contacto">
+    </form>
+</section>
+
+<footer>
+    <a href="mailto: franciscorotundo@gmail.com">Enviame un correo</a>
+    <a href="tel:+3704331665">Lllamar</a> <!--FIJARSE CUALES MAS HAY QUE SON-->>
+    <a href="tel:+3704331665">Wsp</a>
+</footer>
+
+
+
     </body>
 
 
